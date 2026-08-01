@@ -3,8 +3,7 @@ title: Workshop Finder
 emoji: 🗂️
 colorFrom: gray
 colorTo: black
-sdk: docker
-app_port: 7860
+sdk: static
 pinned: false
 license: apache-2.0
 short_description: Every workshop at every A*/A conference — deadlines first.
@@ -46,13 +45,14 @@ bash pipeline/update.sh
 
 ### Continuous updates
 
-The app is hosted as a **Hugging Face Space** (Docker SDK). The Space serves
-the static build and re-runs the pipeline on a daily background schedule; a
-`POST /refresh` endpoint triggers an immediate refill. The Space deploys from
-the GitHub repo, so the code lives in git and the Space stays in sync on push.
-Workshops that the keyword taxonomy can't tag fall back to
-[LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M), a 230M
-edge model, so every workshop ships with topics.
+GitHub is the source of truth; the app ships as a **free Hugging Face Static
+Space**. A GitHub Action (`.github/workflows/update-data.yml`) runs the pipeline
+on a daily schedule and on every push to `main`, builds the frontend, and pushes
+the built site to the HF Static Space. Workshops that the keyword taxonomy can't
+tag fall back to [LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M),
+a 230M edge model, so every workshop ships with topics. The Docker runtime in
+`space/` and `Dockerfile` is kept as an optional PRO-only alternative that runs
+the pipeline on the Space itself.
 
 ## Frontend
 

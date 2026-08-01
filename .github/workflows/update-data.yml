@@ -1,34 +1,98 @@
-name: Refill the catalog
+name: Refill + deploy
 
-# Keeps the workshop dataset fresh: re-runs the scraping pipeline on a
-# schedule and commits the rebuilt dataset. Also runnable by hand.
+# Re-scrapes every source, fills missing topics with LiquidAI/LFM2.5-230M,
+# builds the frontend, and ships the built site to the free HF Static Space.
+# GitHub is the source of truth; the HF Space only holds the built artifact.
 
 on:
   schedule:
     - cron: "17 5 * * *" # daily at 05:17 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "pipeline/**"
+      - "space/**"
+      - ".github/workflows/update-data.yml"
+      - "Dockerfile"
 
 permissions:
   contents: write
 
+concurrency:
+  group: refill-deploy
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      HF_USER: chungimungi
+      HF_SPACE: chungimungi/workshop-finder
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.11"
 
-      - name: Install pipeline dependencies
-        run: pip install -r pipeline/requirements.txt
+      - name: Install pipeline dependencies (CPU torch first, then the rest)
+        run: |
+          pip install --upgrade pip
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install -r pipeline/requirements.txt
 
-      - name: Run the pipeline
+      - name: Run the scraping + topic pipeline
         run: bash pipeline/update.sh
 
-      - name: Commit refreshed dataset
+      - name: Commit refreshed dataset back to the repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(data): refill the workshop catalog"
           file_pattern: "data/*.json web/public/data/*.json"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build the frontend
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy built site to the HF Static Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/space
+          git clone "https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}" /tmp/space
+          # Replace everything except .git with the fresh build.
+          find /tmp/space -mindepth 1 -maxdepth 1 ! -name '.git' ! -name '.gitattributes' -exec rm -rf {} +
+          cp -a web/dist/. /tmp/space/
+          # Static Space metadata (HF reads this from the repo root).
+          cat > /tmp/space/README.md <<'EOF'
+          ---
+          title: Workshop Finder
+          emoji: 🗂️
+          colorFrom: gray
+          colorTo: black
+          sdk: static
+          pinned: false
+          license: apache-2.0
+          short_description: Every workshop at every A*/A conference — deadlines first.
+          ---
+          # Workshop Finder
+          Monospace deadline ledger of A*/A conference workshops. Built from
+          [github.com/chungimungi/Workshop-Finder](https://github.com/chungimungi/Workshop-Finder).
+          EOF
+          cd /tmp/space
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "deploy: $(date -u +%FT%TZ)" || echo "no changes to deploy"
+          git push "https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}" HEAD:main
