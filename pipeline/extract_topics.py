@@ -125,8 +125,14 @@ def llm_topics(name: str, short_name: str | None, field: str | None) -> list[str
     )
     messages = [{"role": "user", "content": user}]
     inputs = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt")
-    out = model.generate(inputs, max_new_tokens=48, do_sample=False)
-    reply = tok.decode(out[0][inputs.shape[1]:], skip_special_tokens=True).strip()
+    # apply_chat_template returns a BatchEncoding (dict of input_ids/attention_mask);
+    # unpack it as kwargs and move to the model's device — passing it as a
+    # single positional arg raises AttributeError('shape') in generate() with
+    # this remote-code model + transformers combo.
+    inputs = {k: v.to(model.device) for k, v in inputs.items()}
+    prompt_len = inputs["input_ids"].shape[1]
+    out = model.generate(**inputs, max_new_tokens=48, do_sample=False)
+    reply = tok.decode(out[0][prompt_len:], skip_special_tokens=True).strip()
     return match_taxonomy(reply)
 
 
