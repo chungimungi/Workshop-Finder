@@ -1,0 +1,1535 @@
+{
+  "source": "ICORE2026",
+  "conferences": [
+    {
+      "title": "National Conference of the American Association for Artificial Intelligence",
+      "acronym": "AAAI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "Association for Computational Linguistics",
+      "acronym": "ACL",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "ACM Multimedia",
+      "acronym": "ACMMM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "Automated Software Engineering Conference",
+      "acronym": "ASE",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "Architectural Support for Programming Languages and Operating Systems",
+      "acronym": "ASPLOS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "Computer Aided Verification",
+      "acronym": "CAV",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM Conference on Computer and Communications Security",
+      "acronym": "CCS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "International Conference on Human Factors in Computing Systems",
+      "acronym": "CHI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Conference on Learning Theory",
+      "acronym": "COLT",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "Advances in Cryptology",
+      "acronym": "CRYPTO",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "IEEE Conference on Computer Vision and Pattern Recognition",
+      "acronym": "CVPR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "Design Automation Conf",
+      "acronym": "DAC",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "ACM Conference on Economics and Computation",
+      "acronym": "EC",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "European Conference on Computer Vision",
+      "acronym": "ECCV",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "Empirical Methods in Natural Language Processing",
+      "acronym": "EMNLP",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference on the Theory and Application of Cryptographic Techniques",
+      "acronym": "EuroCrypt",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "IEEE Symposium on Foundations of Computer Science",
+      "acronym": "FOCS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "ACM International Conference on the Foundations of Software Engineering (was ESEC/FSE, changed 2024; duplicate previously listed as ESEC, removed from DB)",
+      "acronym": "FSE",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Symposium on High Performance Computer Architecture",
+      "acronym": "HPCA",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "ACM/IEEE International Conference on Human-Robot Interaction",
+      "acronym": "HRI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "International Colloquium on Automata Languages and Programming",
+      "acronym": "ICALP",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Conference on Automated Planning and Scheduling",
+      "acronym": "ICAPS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "IEEE International Conference on Computer Vision",
+      "acronym": "ICCV",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "International Conference on Data Engineering",
+      "acronym": "ICDE",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "IEEE International Conference on Data Mining",
+      "acronym": "ICDM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Conference on Learning Representations",
+      "acronym": "ICLR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "International Conference on Machine Learning",
+      "acronym": "ICML",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "IEEE International Conference on Robotics and Automation",
+      "acronym": "ICRA",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference on Software Engineering",
+      "acronym": "ICSE",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Joint Conference on Artificial Intelligence",
+      "acronym": "IJCAI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "IEEE International Conference on Computer Communications",
+      "acronym": "INFOCOM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM International Symposium on Computer Architecture",
+      "acronym": "ISCA",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "IEEE/ACM International Symposium on Mixed and Augmented Reality",
+      "acronym": "ISMAR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4607",
+      "field": "Graphics, Augmented Reality and Games"
+    },
+    {
+      "title": "ACM International Conference on Knowledge Discovery and Data Mining",
+      "acronym": "KDD",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Conference on the Principles of Knowledge Representation and Reasoning",
+      "acronym": "KR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "IEEE Symposium on Logic in Computer Science",
+      "acronym": "LICS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Symposium on Microarchitecture",
+      "acronym": "MICRO",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "ACM International Conference on Mobile Computing and Networking",
+      "acronym": "MOBICOM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "Usenix Network and Distributed System Security Symposium",
+      "acronym": "NDSS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "Advances in Neural Information Processing Systems (was NIPS)",
+      "acronym": "NeurIPS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "Usenix Symposium on Operating Systems Design and Implementation",
+      "acronym": "OSDI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE International Conference on Pervasive Computing and Communications",
+      "acronym": "PERCOM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "ACM-SIGPLAN Conference on Programming Language Design and Implementation",
+      "acronym": "PLDI",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM Symposium on Principles of Distributed Computing",
+      "acronym": "PODC",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems",
+      "acronym": "PODS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "ACM-SIGACT Symposium on Principles of Programming Languages",
+      "acronym": "POPL",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "acronym": "SIGCOMM",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM SIG International Conference on Computer Graphics and Interactive Techniques",
+      "acronym": "SIGGRAPH",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4607",
+      "field": "Graphics, Augmented Reality and Games"
+    },
+    {
+      "title": "ACM International Conference on Research and Development in Information Retrieval",
+      "acronym": "SIGIR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "Measurement and Modeling of Computer Systems",
+      "acronym": "SIGMETRICS",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM Special Interest Group on Management of Data Conference",
+      "acronym": "SIGMOD",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "ACM/SIAM Symposium on Discrete Algorithms",
+      "acronym": "SODA",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "ACM SIGOPS Symposium on Operating Systems Principles",
+      "acronym": "SOSP",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE Symposium on Security and Privacy",
+      "acronym": "SP",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "ACM Symposium on Theory of Computing",
+      "acronym": "STOC",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "SIGGRAPH Asia",
+      "acronym": "SiggraphA",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4607",
+      "field": "Graphics, Augmented Reality and Games"
+    },
+    {
+      "title": "International Symposium on Computational Geometry",
+      "acronym": "SoCG",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "ACM Symposium on User Interface Software and Technology",
+      "acronym": "UIST",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Usenix Security Symposium",
+      "acronym": "USENIX-Security",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "International Conference on Very Large Databases",
+      "acronym": "VLDB",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "IEEE Conference on Virtual Reality and 3D User Interfaces",
+      "acronym": "VR",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4607",
+      "field": "Graphics, Augmented Reality and Games"
+    },
+    {
+      "title": "International World Wide Web Conference",
+      "acronym": "WWW",
+      "source": "ICORE2026",
+      "rank": "A*",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "International Joint Conference on Autonomous Agents and Multiagent Systems (previously the International Conference on Multiagent Systems, ICMAS, changed in 2000)",
+      "acronym": "AAMAS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "Annual Computer Security Applications Conference",
+      "acronym": "ACSAC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "International Conference on Artificial Intelligence in Education",
+      "acronym": "AIED",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4601",
+      "field": "Applied Computing"
+    },
+    {
+      "title": "International Conference on Artificial Intelligence and Statistics",
+      "acronym": "AISTATS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "Workshop on Algorithm Engineering and Experiments",
+      "acronym": "ALENEX",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Workshop on Approximation Algorithms for Combinatorial Optimization Problems and International Conference on Randomization and Computation",
+      "acronym": "APPROX/RANDOM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Conference on the Theory and Application of Cryptology and Information Security",
+      "acronym": "ASIACRYPT",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "International ACM SIGACCESS Conference on Computers and Accessibility",
+      "acronym": "ASSETS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Asia Conference on Information, Computer and Communications Security",
+      "acronym": "AsiaCCS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "British Machine Vision Conference",
+      "acronym": "BMVC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "International Conference in Business Process Management",
+      "acronym": "BPM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Conference on Automated Deduction",
+      "acronym": "CADE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "IEEE Conference on Computational Complexity",
+      "acronym": "CCC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Symposium on Code Generation and Optimization",
+      "acronym": "CGO",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "Workshop on Cryptographic Hardware and Embedded Systems",
+      "acronym": "CHES",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "Conference on Innovative Data Systems Research",
+      "acronym": "CIDR",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "ACM International Conference on Information and Knowledge Management",
+      "acronym": "CIKM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Conference on Principles and Practice of Constraint Programming",
+      "acronym": "CP",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "ACM Conference on Computer Supported Cooperative Work",
+      "acronym": "CSCW",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "IEEE Computer Security Foundations Symposium (was CSFW)",
+      "acronym": "CSF",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "International Conference on Advanced Information Systems Engineering",
+      "acronym": "CaiSE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "ACM International Conference on Emerging Networking Experiments and Technologies",
+      "acronym": "CoNEXT",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "Design, Automation and Test in Europe Conference",
+      "acronym": "DATE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "Designing Interactive Systems",
+      "acronym": "DIS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "International Symposium on Distributed Computing (was WDAG)",
+      "acronym": "DISC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE/IFIP International Conference on Dependable Systems and Networks",
+      "acronym": "DSN",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "European Association for Computational Linguistics",
+      "acronym": "EACL",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference on Evaluation and Assessment in Software Engineering",
+      "acronym": "EASE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "European Conference on Artificial Intelligence",
+      "acronym": "ECAI",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "European Conference on Information Retrieval",
+      "acronym": "ECIR",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database (PKDD and ECML combined from 2008)",
+      "acronym": "ECML PKDD",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "European Conference on Object-Oriented Programming",
+      "acronym": "ECOOP",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Conference on Conceptual Modelling",
+      "acronym": "ER",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "European Symposium on Algorithms",
+      "acronym": "ESA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Symposium on Empirical Software Engineering and Measurement",
+      "acronym": "ESEM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "European Symposium on Programming",
+      "acronym": "ESOP",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "European Symposium On Research In Computer Security",
+      "acronym": "ESORICS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "IEEE European Symposium on Security and Privacy",
+      "acronym": "EuroS&P",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "Eurosys Conference",
+      "acronym": "EuroSys",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "Conference on File and Storage Technologies",
+      "acronym": "FAST",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "Financial Cryptography and Data Security Conference",
+      "acronym": "FC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "Foundations of Genetic Algorithms",
+      "acronym": "FOGA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "ACM Int'l Symposium on Field Programmable Gate Arrays",
+      "acronym": "FPGA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "Graph Drawing",
+      "acronym": "GD",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "Genetic and Evolutionary Computations",
+      "acronym": "GECCO",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "ACM International Symposium on High Performance Distributed Computing",
+      "acronym": "HPDC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "USENIX Workshop on Hot Topics in Operating Systems",
+      "acronym": "HotOS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE/ACM International Conference on Computer-Aided Design",
+      "acronym": "ICCAD",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "IEEE International Conference on Document Analysis and Recognition",
+      "acronym": "ICDAR",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Conference on Distributed Computing Systems",
+      "acronym": "ICDCS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "International Conference on Database Theory",
+      "acronym": "ICDT",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Computing Education Research Workshop",
+      "acronym": "ICER",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "International Conference on Functional Programming",
+      "acronym": "ICFP",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "IEEE International Conference on Multimedia and Expo",
+      "acronym": "ICME",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "IEEE International Conference on Program Comprehension (previously IWPC, changed in 2006)",
+      "acronym": "ICPC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM International Conference on Supercomputing",
+      "acronym": "ICS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "International Conference on Software Architecture (was previously WICSA)",
+      "acronym": "ICSA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "IEEE International Conference on Software Maintenance and Evolution (prior to 2014 was ICSM, IEEE International Conference on Software Maintenance)",
+      "acronym": "ICSME",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Conference on Service Oriented Computing",
+      "acronym": "ICSOC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "International Conference on Software Testing, Verification and Validation",
+      "acronym": "ICST",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "IEEE International Conference on Web Services",
+      "acronym": "ICWS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "International Conference on Web and Social Media",
+      "acronym": "ICWSM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4601",
+      "field": "Applied Computing"
+    },
+    {
+      "title": "IEEE Visualization",
+      "acronym": "IEEE VIS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "International Joint Conference on Automated Reasoning",
+      "acronym": "IJCAR",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "Internet Measurement Conference",
+      "acronym": "IMC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE International Parallel and Distributed Processing Symposium (was IPPS and SPDP)",
+      "acronym": "IPDPS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+      "acronym": "IROS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "IEEE/ACM International Symposium on Low Power Electronics and Design",
+      "acronym": "ISLPED",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "Intelligent Systems in Molecular Biology",
+      "acronym": "ISMB",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4601",
+      "field": "Applied Computing"
+    },
+    {
+      "title": "International Symposium on Software Reliability Engineering",
+      "acronym": "ISSRE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Symposium on Software Testing and Analysis",
+      "acronym": "ISSTA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Semantic Web Conference",
+      "acronym": "ISWC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "IEEE International Test Conference",
+      "acronym": "ITC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "Innovations in Theoretical Computer Science",
+      "acronym": "ITCS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "International Conference on Intelligent User Interfaces",
+      "acronym": "IUI",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Interspeech (combined EuroSpeech and ICSLP in 2000)",
+      "acronym": "Interspeech",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference on Learning Analytics and Knowledge",
+      "acronym": "LAK",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Medical Image Computing and Computer-Assisted Intervention",
+      "acronym": "MICCAI",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4601",
+      "field": "Applied Computing"
+    },
+    {
+      "title": "ACM Multimedia Systems Conference",
+      "acronym": "MMSys",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "International Conference on Model Driven Engineering Languages and Systems (Previously UML, changed in 2005)",
+      "acronym": "MODELS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "IEEE International Working Conference on Mining Software Repositories",
+      "acronym": "MSR",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM/IEEE International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems",
+      "acronym": "MSWIM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM/IFIP/USENIX International Middleware Conference",
+      "acronym": "Middleware",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services",
+      "acronym": "Mobisys",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "North American Association for Computational Linguistics",
+      "acronym": "NAACL",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "ACM Conference on Object Oriented Programming Systems Languages and Applications",
+      "acronym": "OOPSLA",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "Privacy Enhancing Technologies Symposium (was International Workshop of Privacy Enhancing Technologies)",
+      "acronym": "PETS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "Parallel Problem Solving from Nature",
+      "acronym": "PPSN",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4611",
+      "field": "Machine Learning"
+    },
+    {
+      "title": "The International Symposium on Research in Attacks, Intrusions and Defenses (was International Symposium on Recent Advances in Intrusion Detection)",
+      "acronym": "RAID",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4604",
+      "field": "Cybersecurity and Privacy"
+    },
+    {
+      "title": "IEEE International Requirements Engineering Conference",
+      "acronym": "RE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "acronym": "RTAS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "Real Time Systems Symposium",
+      "acronym": "RTSS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "ACM International Conference on Recommender Systems",
+      "acronym": "RecSys",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "acronym": "SANER",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "International Conference on Theory and Applications of Satisfiability Testing",
+      "acronym": "SAT",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference for High Performance Computing, Networking, Storage and Analysis (was Supercomputing Conference)",
+      "acronym": "SC",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "CSE",
+      "field": "Computer Systems Engineering"
+    },
+    {
+      "title": "SIAM International Conference on Data Mining",
+      "acronym": "SDM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    },
+    {
+      "title": "International Symposium on Software Engineering for Adaptive and Self-Managing Systems",
+      "acronym": "SEAMS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "ACM Special Interest Group on Computer Science Education Conference",
+      "acronym": "SIGCSE",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "ACM International Conference on Advances in Geographic Information Systems",
+      "acronym": "SIGSPATIAL",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4601",
+      "field": "Applied Computing"
+    },
+    {
+      "title": "Symposium On Usable Privacy and Security",
+      "acronym": "SOUPS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "International Symposium on Theoretical Aspects of Computer Science",
+      "acronym": "STACS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4613",
+      "field": "Theory of Computation"
+    },
+    {
+      "title": "Tools and Algorithms for Construction and Analysis of Systems",
+      "acronym": "TACAS",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4612",
+      "field": "Software Engineering"
+    },
+    {
+      "title": "Conference in Uncertainty in Artificial Intelligence",
+      "acronym": "UAI",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4602",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "International Conference on User Modelling, Adaptation, and Personalization (was AH and UM)",
+      "acronym": "UMAP",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4608",
+      "field": "Human-Centred Computing"
+    },
+    {
+      "title": "Usenix Annual Technical Conference",
+      "acronym": "USENIX",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4606",
+      "field": "Distributed Computing and Systems Software"
+    },
+    {
+      "title": "IEEE Workshop on Applications of Computer Vision",
+      "acronym": "WACV",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4603",
+      "field": "Computer Vision and Multimedia Computation"
+    },
+    {
+      "title": "ACM International Conference on Web Search and Data Mining",
+      "acronym": "WSDM",
+      "source": "ICORE2026",
+      "rank": "A",
+      "dblp": null,
+      "forCode": "4605",
+      "field": "Data Management and Data Science"
+    }
+  ]
+}

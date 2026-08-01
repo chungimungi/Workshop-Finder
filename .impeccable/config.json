@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "createdAt": "2026-08-01T07:34:29.429Z",
+        "reason": "One-Bit Desktop direction (user-confirmed 2026-08-01): monospace is the committed type material"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f0f0f0",
+        "createdAt": "2026-08-01T07:35:38.147Z",
+        "reason": "One-Bit Desktop: row hover tint"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1a1a1a",
+        "createdAt": "2026-08-01T07:35:38.211Z",
+        "reason": "One-Bit Desktop: inverse-video closing-row hover"
+      }
+    ]
+  }
+}

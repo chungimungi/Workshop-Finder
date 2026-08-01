@@ -1,0 +1,7 @@
+requests>=2.32.0
+beautifulsoup4>=4.12.0
+# Topic extraction fallback (LiquidAI/LFM2.5-230M, ~0.5GB). Only needed when
+# the keyword matcher leaves workshops without topics; the script degrades
+# gracefully if these are absent (use `python pipeline/extract_topics.py --no-llm`).
+transformers>=4.46.0
+torch>=2.4.0
