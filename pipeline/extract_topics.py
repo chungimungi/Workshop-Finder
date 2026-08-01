@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+import traceback
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -99,8 +100,10 @@ def load_llm():
         return _LLM
     from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
     model_id = "LiquidAI/LFM2.5-230M"
-    tok = AutoTokenizer.from_pretrained(model_id)
-    model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype="auto")
+    # LFM uses a custom architecture not yet in transformers core, so the
+    # model repo ships its own modeling code — trust_remote_code loads it.
+    tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype="auto", trust_remote_code=True)
     _LLM = (tok, model)
     return _LLM
 
@@ -150,7 +153,10 @@ def main() -> int:
                 topics = llm_topics(name, short, field)
                 llm_used += 1
             except Exception as e:
-                print(f"  llm fallback failed for {w['conference']}/{name[:40]}: {e}", file=sys.stderr)
+                print(f"  llm fallback failed for {w['conference']}/{name[:40]}: {e!r}", file=sys.stderr)
+                if llm_used == 0:
+                    # surface the full traceback once so the failure is diagnosable
+                    print(traceback.format_exc(), file=sys.stderr)
         # final guarantee: never ship empty topics — inherit the host field
         if not topics and field:
             topics = [field]

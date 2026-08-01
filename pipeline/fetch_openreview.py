@@ -17,7 +17,6 @@ import json
 import re
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,7 +30,6 @@ API = "https://api2.openreview.net"
 HOMEPAGE = "https://openreview.net/"
 HEADERS = {"User-Agent": "WorkshopFinderBot/1.0 (+https://github.com/aarush/workshop-finder; polite research scraper)"}
 DELAY = 0.25
-MAX_WORKERS = 8  # concurrent venue-detail fetches; get_groups retries/backoffs handle rate limits
 YEARS = ("2026", "2027")
 
 # Aliases from OpenReview id tokens to ICORE acronyms.
@@ -161,65 +159,47 @@ def content_value(content: dict, *keys: str) -> str | None:
     return None
 
 
-def _fetch_one_venue(vid: str, known: dict[str, dict]) -> dict | None:
-    """Fetch + parse a single workshop venue group. Returns None if it's not
-    A*/A or has no group content. Isolated so it can run in a worker thread."""
-    base, _, tail = vid.partition("/Workshop/")
-    conf_acronym = acronym_for_venue(base, known)
-    if not conf_acronym:
-        return None
-    year_m = re.search(r"/(\d{4})/", vid)
-    groups = get_groups({"id": vid})
-    time.sleep(DELAY)
-    if not groups:
-        return None
-    content = groups[0].get("content") or {}
-
-    deadline = None
-    date_blob = content_value(content, "date") or ""
-    m = DATE_RE.search(date_blob)
-    if m:
-        deadline = parse_date_string(m.group(1))
-    if not deadline:
-        deadline = parse_date_string(content_value(content, "submission_deadline") or "")
-
-    return {
-        "id": vid,
-        "name": content_value(content, "title") or tail.replace("_", " "),
-        "shortName": content_value(content, "subtitle") or tail.replace("_", " "),
-        "workshopAcronym": tail,
-        "conference": conf_acronym,
-        "year": int(year_m.group(1)) if year_m else None,
-        "openreviewUrl": f"https://openreview.net/group?id={vid}",
-        "website": content_value(content, "website"),
-        "location": content_value(content, "location"),
-        "conferenceStart": parse_date_string(content_value(content, "start_date") or ""),
-        "deadline": deadline,
-        "deadlineRaw": m.group(1).strip() if m else None,
-        "source": "openreview",
-    }
-
-
 def fetch_venue_details(venue_ids: list[str], known: dict[str, dict]) -> list[dict]:
-    """Fetch all venue details concurrently. The per-venue call is I/O-bound
-    (one OpenReview /groups?id= request with retries), so a small thread pool
-    turns ~881 sequential requests into a few minutes instead of hours."""
-    ids = sorted(set(venue_ids))
-    total = len(ids)
-    workshops: list[dict] = []
-    done = 0
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = [ex.submit(_fetch_one_venue, vid, known) for vid in ids]
-        for fut in as_completed(futures):
-            done += 1
-            try:
-                w = fut.result()
-            except Exception:
-                w = None
-            if w:
-                workshops.append(w)
-            if done % 50 == 0 or done == total:
-                print(f"  details: {done}/{total}")
+    workshops = []
+    for i, vid in enumerate(sorted(set(venue_ids))):
+        base, _, tail = vid.partition("/Workshop/")
+        conf_acronym = acronym_for_venue(base, known)
+        if not conf_acronym:
+            continue
+        year_m = re.search(r"/(\d{4})/", vid)
+        groups = get_groups({"id": vid})
+        time.sleep(DELAY)
+        if not groups:
+            continue
+        content = groups[0].get("content") or {}
+
+        deadline = None
+        date_blob = content_value(content, "date") or ""
+        m = DATE_RE.search(date_blob)
+        if m:
+            deadline = parse_date_string(m.group(1))
+        if not deadline:
+            deadline = parse_date_string(content_value(content, "submission_deadline") or "")
+
+        workshops.append(
+            {
+                "id": vid,
+                "name": content_value(content, "title") or tail.replace("_", " "),
+                "shortName": content_value(content, "subtitle") or tail.replace("_", " "),
+                "workshopAcronym": tail,
+                "conference": conf_acronym,
+                "year": int(year_m.group(1)) if year_m else None,
+                "openreviewUrl": f"https://openreview.net/group?id={vid}",
+                "website": content_value(content, "website"),
+                "location": content_value(content, "location"),
+                "conferenceStart": parse_date_string(content_value(content, "start_date") or ""),
+                "deadline": deadline,
+                "deadlineRaw": m.group(1).strip() if m else None,
+                "source": "openreview",
+            }
+        )
+        if (i + 1) % 50 == 0:
+            print(f"  details: {i + 1}/{len(venue_ids)}")
     return workshops
 
 
