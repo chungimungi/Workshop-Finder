@@ -47,10 +47,15 @@ jobs:
         run: bash pipeline/update.sh
 
       - name: Commit refreshed dataset back to the repo
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore(data): refill the workshop catalog"
-          file_pattern: "data/*.json web/public/data/*.json"
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json web/public/data/*.json
+          git commit -m "chore(data): refill the workshop catalog" || echo "nothing to commit"
+          # Rebase onto any concurrent push to main (e.g. a code fix landed mid-run).
+          git pull --rebase origin main || echo "rebase failed, skipping data push"
+          git push origin main || echo "data push rejected (concurrent push); build+deploy still proceed"
 
       - uses: actions/setup-node@v4
         with:
