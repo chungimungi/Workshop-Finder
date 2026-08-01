@@ -2,7 +2,7 @@
 title: Workshop Finder
 emoji: 🗂️
 colorFrom: gray
-colorTo: black
+colorTo: gray
 sdk: static
 pinned: false
 license: apache-2.0
