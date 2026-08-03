@@ -1265,22 +1265,6 @@
       "source": "website"
     },
     {
-      "id": "site:VLDB:phd workshop",
-      "name": "PhD Workshop",
-      "shortName": "PhD Workshop",
-      "workshopAcronym": "PhD Workshop",
-      "conference": "VLDB",
-      "year": null,
-      "deadline": null,
-      "deadlineRaw": null,
-      "conferenceStart": null,
-      "location": null,
-      "website": "https://vldb.org/2026/call-for-phd-workshop.html",
-      "openreviewUrl": null,
-      "url": "https://vldb.org/2026/call-for-phd-workshop.html",
-      "source": "website"
-    },
-    {
       "id": "site:WSDM:call for workshops",
       "name": "Call for Workshops",
       "shortName": "Call for Workshops",
