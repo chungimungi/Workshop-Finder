@@ -86,12 +86,22 @@ def acronym_for_venue(venue_base: str, known: dict[str, dict]) -> str | None:
     return None
 
 
-def homepage_workshop_ids() -> list[str]:
-    resp = requests.get(HOMEPAGE, headers=HEADERS, timeout=60)
-    resp.raise_for_status()
-    ids = {m.group(1) for m in VENUE_ID_RE.finditer(resp.text)}
-    # keep only the workshop venue root (no deeper subgroups like /Authors)
-    return sorted(i for i in ids if i.rsplit("/Workshop", 1)[-1].count("/") <= 1)
+def homepage_workshop_ids(retries: int = 2) -> list[str]:
+    """Fetch active workshop venue ids from the OpenReview homepage, with
+    retries — matches get_groups()'s tolerance for transient API failures."""
+    for attempt in range(retries + 1):
+        try:
+            resp = requests.get(HOMEPAGE, headers=HEADERS, timeout=60)
+            resp.raise_for_status()
+            ids = {m.group(1) for m in VENUE_ID_RE.finditer(resp.text)}
+            # keep only the workshop venue root (no deeper subgroups like /Authors)
+            return sorted(i for i in ids if i.rsplit("/Workshop", 1)[-1].count("/") <= 1)
+        except requests.RequestException as e:
+            if attempt == retries:
+                print(f"  homepage fetch failed after {retries + 1} attempts: {e}")
+                return []
+            time.sleep(1.0 + attempt)
+    return []
 
 
 def get_groups(params: dict, retries: int = 2) -> list[dict]:
