@@ -385,38 +385,6 @@
       "source": "website"
     },
     {
-      "id": "site:MICRO:call for workshops & tutorials",
-      "name": "Call for Workshops & Tutorials",
-      "shortName": "Call for Workshops & Tutorials",
-      "workshopAcronym": "Call for Workshops & Tutorials",
-      "conference": "MICRO",
-      "year": null,
-      "deadline": null,
-      "deadlineRaw": null,
-      "conferenceStart": null,
-      "location": null,
-      "website": "https://www.microarch.org/micro59/program/submit/workshops.php",
-      "openreviewUrl": null,
-      "url": "https://www.microarch.org/micro59/program/submit/workshops.php",
-      "source": "website"
-    },
-    {
-      "id": "site:MICRO:workshops & tutorials",
-      "name": "Workshops & Tutorials",
-      "shortName": "Workshops & Tutorials",
-      "workshopAcronym": "Workshops & Tutorials",
-      "conference": "MICRO",
-      "year": null,
-      "deadline": null,
-      "deadlineRaw": null,
-      "conferenceStart": null,
-      "location": null,
-      "website": "https://www.microarch.org/micro59/program/program/workshops-new.php",
-      "openreviewUrl": null,
-      "url": "https://www.microarch.org/micro59/program/program/workshops-new.php",
-      "source": "website"
-    },
-    {
       "id": "site:HPCA:pre-conference: cc, workshops, tutorials",
       "name": "Pre-Conference: CC, Workshops, Tutorials",
       "shortName": "Pre-Conference: CC, Workshops, Tutorials",
