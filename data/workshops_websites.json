@@ -1521,6 +1521,38 @@
       "source": "website"
     },
     {
+      "id": "site:AAMAS:workshops proposals",
+      "name": "Workshops Proposals",
+      "shortName": "Workshops Proposals",
+      "workshopAcronym": "Workshops Proposals",
+      "conference": "AAMAS",
+      "year": null,
+      "deadline": null,
+      "deadlineRaw": null,
+      "conferenceStart": null,
+      "location": null,
+      "website": "https://cyprusconferences.org/aamas2026/call-for-workshops/",
+      "openreviewUrl": null,
+      "url": "https://cyprusconferences.org/aamas2026/call-for-workshops/",
+      "source": "website"
+    },
+    {
+      "id": "site:AAMAS:more info",
+      "name": "More Info",
+      "shortName": "More Info",
+      "workshopAcronym": "More Info",
+      "conference": "AAMAS",
+      "year": null,
+      "deadline": null,
+      "deadlineRaw": null,
+      "conferenceStart": null,
+      "location": null,
+      "website": "https://alaworkshop2026.github.io",
+      "openreviewUrl": null,
+      "url": "https://alaworkshop2026.github.io",
+      "source": "website"
+    },
+    {
       "id": "site:KR:description logics workshop 2026 (dl 2026)",
       "name": "Description Logics Workshop 2026 (DL 2026)",
       "shortName": "Description Logics Workshop 2026 (DL 2026)",
